@@ -3,20 +3,28 @@ import React from 'react';
 export default function Contact() {
   return (
     <div>
-      <h1>Contact Page</h1>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-      </p>
+      <section class="page-section" id="contact">
+        <h2>Contact Page</h2>
+        <div class="col">
+          <form>
+
+            <label class="row "for="fname">First Name</label>
+            <input class="row mb-3" type="text" id="fname" name="firstname" placeholder="Your first name.."></input>
+
+            <label class="row" for="lname">Last Name</label>
+            <input class="row mb-3" type="text" id="lname" name="lastname" placeholder="Your last name.."></input>
+
+            <label class="row" for="lname">Email</label>
+            <input class="row mb-3" type="email" id="lname" name="lastname" placeholder="Your email.."></input>
+
+            <label class="row" for="subject">Subject</label>
+            <textarea class="row" id="subject" name="subject" placeholder="Write something.." ></textarea>
+
+            <input type="submit" value="Submit"></input>
+
+          </form>
+        </div>
+      </section>
     </div>
   );
 }
